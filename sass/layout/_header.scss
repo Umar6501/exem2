@@ -1,0 +1,60 @@
+@use "../base/colors" as *;
+@use "../components" as *;
+
+body {
+  header {
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+    padding-top: 28px;
+    padding-bottom: 28px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    .container {
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .nav-links {
+          display: flex;
+          flex-direction: row;
+          gap: 32px;
+          .nav-link {
+            a {
+              color: #fff;
+
+              /* Text link */
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px; /* 150% */
+            }
+          }
+        }
+        .menu {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 867px) {
+  body {
+    header {
+      .container {
+        .navbar {
+          .nav-links {
+            display: none;
+          }
+          .menu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

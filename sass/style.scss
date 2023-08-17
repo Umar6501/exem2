@@ -1,5 +1,7 @@
 @import "./base/index";
 @import "./components/index";
 @import "./layout/index";
-@import "./pages";
 @import "./utilities/index";
+* {
+  scroll-behavior: smooth;
+}

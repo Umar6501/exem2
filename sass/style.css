@@ -331,6 +331,27 @@ body .bottom .bottom-content .icons {
   gap: 25px;
 }
 
+body .bottom #backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 16px;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.6s;
+}
+
 @media (max-width: 762px) {
   body footer .container .footer-content {
     display: flex;
